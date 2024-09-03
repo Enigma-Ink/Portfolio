@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-right: 15px;
+    position: relative;
+}
+
+.nav-link .fa-home {
+    margin-left: 5px;
+}
+
+.social-icons i {
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHIyMXV1bDJrdHNlamxlb2gydWhwZDlodzlscGFqbXUxbmhyMWJxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.webp') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move content to the right */
+    padding-right: 50px; /* Add some padding to the right */
+}
+
+.bubble-frame {
+    width: 250px; /* Increased size */
+    height: 250px; /* Increased size */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    animation: bubble-frame 3s ease-in-out infinite; /* New animation for the frame */
+}
+
+.bubble-frame img {
+    width: 100%;
+    height: auto;
+    animation: none; /* Disable the image animation */
+}
+
+/* Keyframes for Bubble Effect (Frame Only) */
+@keyframes bubble-frame {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Portfolio Section Styling */
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Blogs Section Styling */
+.blog-card {
+    border: none;
+    transition: transform 0.3s;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card .btn {
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.blog-card .btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+}
