@@ -1,6 +1,7 @@
-/* General Styling */
+/* General Body Styling */
 body {
     font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* Soft light blue gradient */
 }
 
 .navbar {
@@ -146,9 +147,8 @@ body {
     height: auto;
 }
 
-
-
 /* Portfolio Section Styling */
+
 .card {
     border: none;
     transition: transform 0.3s;
@@ -189,4 +189,9 @@ body {
 footer {
     background-color: #343a40;
     color: white;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); /* Soft pink to blush gradient */
 }
