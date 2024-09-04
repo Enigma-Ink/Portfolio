@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Move content to the right */
-    padding-right: 50px; /* Add some padding to the right */
+    padding-right: 0px; /* Add some padding to the right */
 }
 
 .bubble-frame {
