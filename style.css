@@ -195,3 +195,66 @@ footer {
 #contact {
     background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); /* Soft pink to blush gradient */
 }
+
+/* Project and Certificate Cards */
+.card {
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the border radius applies to the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add space between cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    border-radius: 15px; /* Match the card’s border radius */
+    width: calc(100% - 20px); /* Leave spacing on each side */
+    margin: 10px; /* Add spacing around the image */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Adjust spacing for certificate images */
+.card .card-img-top {
+    padding: 10px; /* Add padding around the image inside the card */
+    background: white; /* Background color for padding */
+    border-radius: 10px; /* Slightly less rounding for inner image */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Additional Spacing Adjustments for Certificate Section */
+#certificates .card-img-top {
+    width: auto; /* Prevent stretching */
+    max-width: 90%; /* Keep the image smaller than the card width */
+    height: auto;
+    margin: 10px auto; /* Center the image within the card */
+    display: block;
+}
+
+/* Testimonial Cards */
+#testimonials .card-body {
+    border: none;
+    border-radius: 15px; /* Rounded corners for testimonial cards */
+    overflow: hidden; /* Ensure the border radius applies to the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add space between testimonial cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px; /* Add padding inside the testimonial cards */
+    background-color: white; /* Ensure background color contrasts with shadow */
+}
+
+#testimonials .card-body img {
+    border-radius: 15px; /* Match the card’s border radius */
+    width: calc(100% - 20px); /* Leave spacing on each side */
+    margin: 10px auto; /* Add spacing around the image and center it */
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around image */
+}
+
+#testimonials .card-body:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
